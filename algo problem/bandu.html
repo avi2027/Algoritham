@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Reservation System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #096386;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    h1 {
+        text-align: center;
+        color: #fff8a1;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #ffa3ac;
+    }
+    input[type="text"], input[type="number"], select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+        scale: 1.1;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Bus Reservation System</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <label for="numTickets">Number of Tickets:</label>
+        <input type="number" id="numTickets" name="numTickets" min="1" required>
+
+        <label for="Pickup">Pickup:</label>
+        <select id="Pickup" name="destination" required>
+            <option value="">Select Pickup point</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+        </select>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="">Select Destination</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

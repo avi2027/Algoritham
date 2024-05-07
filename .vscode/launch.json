@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/Alogoritham/unlock algoritham/prily-23",
-      "program": "/Users/Alogoritham/unlock algoritham/prily-23/build/Debug/outDebug"
+      "cwd": "/Users/Alogoritham/Backtacing",
+      "program": "/Users/Alogoritham/Backtacing/build/Debug/outDebug"
     }
   ]
 }
